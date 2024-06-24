@@ -22,6 +22,7 @@ javascript:(function() {
         var contentDiv = document.createElement('div');
         contentDiv.id = 'div_trans_content';
         contentDiv.style.border = '1px solid #088cdb';
+        contentDiv.style.color = 'black';
         contentDiv.style.padding = '2px 5px 2px 5px';
         contentDiv.style.overflow = 'auto';
         contentDiv.innerHTML = 'loading';
