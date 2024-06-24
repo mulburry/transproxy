@@ -14,11 +14,13 @@ a proxy for google translate api, to avoid CORS issue
 可部署到vps服务器或cf、aws的某些免费服务上。
 
 1. python环境  
+
 因为仅仅使用了flask的非常基础的功能，对python版本应该没有严格要求，我本人的环境是：
 - Python 3.11.2
 - pip    23.0.1
 
 2. 安装依赖  
+
 一样应该没有严格的版本要求：  
 ```bash
 pip install Flask requests flask-cors gunicorn
@@ -31,6 +33,7 @@ pip install Flask requests flask-cors gunicorn
 - requests           2.32.3
 
 3. 运行  
+
 首先需要一个简单的配置，在代码所在目录下的keys.txt中填入任意的key（建议长度16位以上），用于校验访问合法性，防止资源滥用。  
 可以配置多个key，一行一个即可。  
 
@@ -45,6 +48,7 @@ python app.py
 ```
 
 4. nginx  
+
 也算是标准玩法了，对外服务通过nginx提供，配置仅供参考：  
 ```conf
 server {
